@@ -1,0 +1,38 @@
+{
+  "customThemes": [
+    {
+      "name": "Bisexual",
+      "colors": [
+        "#D60270",
+        "#9B4F96",
+        "#0038A8"
+      ],
+      "group": "Sexuality"
+    }
+  ],
+  "savedWheels": [
+    {
+      "id": "1780624860932",
+      "name": "Yes or No?",
+      "slices": [
+        "YES",
+        "NO",
+        "MAYBE"
+      ],
+      "group": "General"
+    }
+  ],
+  "themeGroups": [
+    "General",
+    "Ocean",
+    "Neon",
+    "Pastel",
+    "Sexuality"
+  ],
+  "wheelGroups": [
+    "Work",
+    "Life",
+    "Food",
+    "General"
+  ]
+}

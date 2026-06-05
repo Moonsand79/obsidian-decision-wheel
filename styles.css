@@ -1,0 +1,80 @@
+.wheel-plugin-container {
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	font-family: var(--font-interface);
+}
+
+.wheel-title {
+	text-align: center;
+	color: var(--text-accent);
+	margin-bottom: 5px;
+}
+
+.wheel-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+	margin-bottom: 15px;
+}
+
+.wheel-mockup {
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	border: 3px dashed var(--text-muted);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: var(--background-secondary-alt);
+	color: var(--text-muted);
+}
+
+.wheel-spin-btn {
+	width: 100%;
+	background-color: var(--interactive-accent) !important;
+	color: white !important;
+	font-weight: bold;
+	padding: 10px !important;
+	border-radius: 5px;
+}
+
+.wheel-list {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	max-height: 250px;
+	overflow-y: auto;
+	margin-bottom: 10px;
+}
+
+.wheel-item-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--background-secondary);
+	padding: 8px 12px;
+	border-radius: 6px;
+	border-left: 5px solid var(--text-accent);
+}
+
+.wheel-item-text {
+	font-weight: 500;
+}
+
+.wheel-delete-btn {
+	background: transparent !important;
+	border: none !important;
+	cursor: pointer;
+	padding: 2px !important;
+}
+
+.wheel-add-btn {
+	width: 100%;
+	background-color: var(--background-modifier-border) !important;
+	padding: 8px !important;
+	border-radius: 5px;
+}
