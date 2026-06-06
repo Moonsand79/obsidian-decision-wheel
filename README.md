@@ -1,92 +1,84 @@
-# Obsidian Sample Plugin
+# 🎡 Obsidian Decision Wheel
 
-This is a sample plugin for Obsidian (https://obsidian.md).
+Stuck overanalyzing a decision? Too many options cluttering your workflow? Stop wasting mental bandwidth. Drop your choices into a visual wheel, give it a spin, and let destiny handle the rest—right inside your Obsidian sidebar.
 
-This project uses TypeScript to provide type checking and documentation.
-The repo depends on the latest plugin API (obsidian.d.ts) in TypeScript Definition format, which contains TSDoc comments describing what it does.
+The **Obsidian Decision Wheel** is a clean, interactive canvas utility designed to break decision paralysis. Built natively for Obsidian with fluid spinning physics, customizable style pallets, and a persistent vault manager to index your setups.
 
-This sample plugin demonstrates some of the basic functionality the plugin API can do.
+---
 
-- Adds a ribbon icon, which shows a Notice when clicked.
-- Adds a command "Open modal (simple)" which opens a Modal.
-- Adds a plugin setting tab to the settings page.
-- Registers a global click event and outputs a Notice on click.
-- Registers a global interval which logs 'setInterval' to the console.
+## ✨ Features
 
-## First time developing plugins?
+* **HTML5 Canvas Vector Rendering:** A responsive, sharp visual wheel drawn on the fly. No heavy imagery or external lag.
+* **Friction & Inertia Physics:** Click "SPIN" and watch the wheel realistically accelerate, coast through friction loss, and organically snap to a calculated winner.
+* **Smart Contrast Algorithm:** Your slices will never share a border color with an identical color block unless mathematically unavoidable. No more adjacent color clashing.
+* **Modular Theme Browser:** Filter style palettes by length (2 to 7 color slots) or search by category. Design custom hex packs and group them natively.
+* **Persistent Choice Vault:** Save your standard wheels (like a basic *Yes/No/Maybe* framework) into dedicated categories. Edit, duplicate, re-tag, or delete configuration arrays instantly. 
 
-Quick starting guide for new plugin devs:
+---
 
-- Check if [someone already developed a plugin for what you want](https://obsidian.md/plugins)! There might be an existing plugin similar enough that you can partner up with.
-- Make a copy of this repo as a template with the "Use this template" button (login to GitHub if you don't see it).
-- Clone your repo to a local development folder. For convenience, you can place this folder in your `.obsidian/plugins/your-plugin-name` folder.
-- Install NodeJS, then run `npm i` in the command line under your repo folder.
-- Run `npm run dev` to compile your plugin from `src/main.ts` to `main.js`.
-- Make changes to `src/main.ts` (or create new `.ts` files). Those changes should be automatically compiled into `main.js`.
-- Reload Obsidian to load the new version of your plugin.
-- Enable plugin in settings window.
-- For updates to the Obsidian API run `npm update` in the command line under your repo folder.
+## 📸 Interface Preview
 
-## Releasing new releases
+![Decision Wheel Interface](wheelscreenshot.png)
 
-- Update your `manifest.json` with your new version number, such as `1.0.1`, and the minimum Obsidian version required for your latest release.
-- Update your `versions.json` file with `"new-plugin-version": "minimum-obsidian-version"` so older versions of Obsidian can download an older version of your plugin that's compatible.
-- Create new GitHub release using your new version number as the "Tag version". Use the exact version number, don't include a prefix `v`. See here for an example: https://github.com/obsidianmd/obsidian-sample-plugin/releases
-- Upload the files `manifest.json`, `main.js`, `styles.css` as binary attachments. Note: The manifest.json file must be in two places, first the root path of your repository and also in the release.
-- Publish the release.
+*Note: I am using the retroma theme. It may not look the same for you.*
+---
 
-> You can simplify the version bump process by running `npm version patch`, `npm version minor` or `npm version major` after updating `minAppVersion` manually in `manifest.json`.
-> The command will bump version in `manifest.json` and `package.json`, and add the entry for the new version to `versions.json`
+## 🛠️ Installation (Local Git Deployment)
 
-## Adding your plugin to the community plugin list
+Since this plugin is in an active build phase and not yet listed on the public Obsidian community marketplace, you can install it instantly by cloning the source code directly into your vault using your local terminal.
 
-- Check the [plugin guidelines](https://docs.obsidian.md/Plugins/Releasing/Plugin+guidelines).
-- Publish an initial version.
-- Make sure you have a `README.md` file in the root of your repo.
-- Make a pull request at https://github.com/obsidianmd/obsidian-releases to add your plugin.
+### 1. Clone the Repository
+Open your terminal and navigate straight into your active vault's hidden plugin directory. Run the clone command to pull down the source files:
 
-## How to use
-
-- Clone this repo.
-- Make sure your NodeJS is at least v18 (`node --version`).
-- `npm i` to install dependencies.
-- `npm run dev` to start compilation in watch mode.
-
-## Manually installing the plugin
-
-- Copy over `main.js`, `styles.css`, `manifest.json` to your vault `VaultFolder/.obsidian/plugins/your-plugin-id/`.
-
-## Improve code quality with eslint
-
-- [ESLint](https://eslint.org/) is a tool that analyzes your code to quickly find problems. You can run ESLint against your plugin to find common bugs and ways to improve your code.
-- This project already has eslint preconfigured, you can invoke a check by running`npm run lint`
-- Together with a custom eslint [plugin](https://github.com/obsidianmd/eslint-plugin) for Obsidan specific code guidelines.
-- A GitHub action is preconfigured to automatically lint every commit on all branches.
-
-## Funding URL
-
-You can include funding URLs where people who use your plugin can financially support it.
-
-The simple way is to set the `fundingUrl` field to your link in your `manifest.json` file:
-
-```json
-{
-	"fundingUrl": "https://buymeacoffee.com"
-}
+```bash
+cd "/path/to/your/Obsidian Vault/.obsidian/plugins"
+git clone https://github.com/Moonsand79/obsidian-decision-wheel.git
+cd obsidian-decision-wheel
 ```
 
-If you have multiple URLs, you can also do:
+### 2. Build the Production Script
 
-```json
-{
-	"fundingUrl": {
-		"Buy Me a Coffee": "https://buymeacoffee.com",
-		"GitHub Sponsor": "https://github.com/sponsors",
-		"Patreon": "https://www.patreon.com/"
-	}
-}
+Install the necessary developer dependencies and trigger the production compiler to build your standalone execution script:
+
+```bash
+npm install
+npm run build
 ```
 
-## API Documentation
+### 3. Activate the Plugin
 
-See https://docs.obsidian.md
+Once the build script outputs your compiled `main.js` asset, open your Obsidian application window:
+
+1. Head over to **Settings** -> **Community Plugins**.
+2. Hit the circular **Refresh** arrow next to your installed list.
+3. Find **Decision Wheel** in the menu list and toggle the switch to **ON**.
+
+---
+
+## 🧭 How It Works & Control Guide
+
+1. Click the **Dice Icon (🎲)** sitting on your left ribbon framework to unfold the view pane.
+2. **Add Items:** Type your choices into the sleek text bar at the bottom and hit `Enter`.
+3. **Customize Style:** Tap **🎨 Colors** to invoke the style browser. Switch to a pre-built color palette, filter by choice array lengths, or inject raw hex strings to map your own palette.
+4. **Manage Vault Arrays:** Click **📂 Wheels Vault** to name and save your current configuration block under custom category labels (e.g., *Life, Work, Food*). Use the canvas grid matrix to load or duplicate them later.
+
+---
+
+## 💻 Local Workspace Development
+
+Want to adjust the wheel graphics, tweak the friction settings, or add custom default themes? Leave the background compiler watcher active while editing code structures inside your local clone directory:
+
+```bash
+npm run dev
+```
+---
+
+## 📄 License
+
+This open-source plugin project architecture is registered under the terms of the Apache License 2.0. Check out the LICENSE file template inside this folder for comprehensive coverage parameters.
+
+---
+
+## ☕ Support
+
+If this plugin saved you time, broke your decision fatigue, or simply looked sharp in your sidebar workflow layout, feel free to let me know!
