@@ -9,10 +9,10 @@ The **Obsidian Decision Wheel** is a clean, interactive canvas utility designed 
 ## ✨ Features
 
 * **HTML5 Canvas Vector Rendering:** A responsive, sharp visual wheel drawn on the fly. No heavy imagery or external lag.
-* **Friction & Inertia Physics:** Click "SPIN" and watch the wheel realistically accelerate, coast through friction loss, and organically snap to a calculated winner.
+* **Friction & Inertia Physics:** Click 'SPIN' and watch the wheel spin and land on a winner.
 * **Smart Contrast Algorithm:** Your slices will never share a border color with an identical color block unless mathematically unavoidable. No more adjacent color clashing.
 * **Modular Theme Browser:** Filter style palettes by length (2 to 7 color slots) or search by category. Design custom hex packs and group them natively.
-* **Persistent Choice Vault:** Save your standard wheels (like a basic *Yes/No/Maybe* framework) into dedicated categories. Edit, duplicate, re-tag, or delete configuration arrays instantly. 
+* **Persistent Choice Vault:** Save your standard wheels (like the default *Yes/No/Maybe* wheel) into dedicated categories. Edit, duplicate, re-tag, or delete configuration arrays instantly. 
 
 ---
 
@@ -62,16 +62,8 @@ Once the build script outputs your compiled `main.js` asset, open your Obsidian 
 2. **Add Items:** Type your choices into the sleek text bar at the bottom and hit `Enter`.
 3. **Customize Style:** Tap **🎨 Colors** to invoke the style browser. Switch to a pre-built color palette, filter by choice array lengths, or inject raw hex strings to map your own palette.
 4. **Manage Vault Arrays:** Click **📂 Wheels Vault** to name and save your current configuration block under custom category labels (e.g., *Life, Work, Food*). Use the canvas grid matrix to load or duplicate them later.
+5. **Mobile Integration:** Swipe down to open the command palette and type 'Decision Wheel: Open Decision Wheel' to open the wheel on the mobile app.
 
----
-
-## 💻 Local Workspace Development
-
-Want to adjust the wheel graphics, tweak the friction settings, or add custom default themes? Leave the background compiler watcher active while editing code structures inside your local clone directory:
-
-```bash
-npm run dev
-```
 ---
 
 ## 📄 License
