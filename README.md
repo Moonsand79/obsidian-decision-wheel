@@ -21,6 +21,7 @@ The **Obsidian Decision Wheel** is a clean, interactive canvas utility designed 
 ![Decision Wheel Interface](wheelscreenshot.png)
 
 *Note: I am using the retroma theme. It may not look the same for you.*
+
 ---
 
 ## 🛠️ Installation (Local Git Deployment)
